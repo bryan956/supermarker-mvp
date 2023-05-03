@@ -12,24 +12,6 @@ namespace Supermarket_mvp.Views
 {
     public partial class PayModeView : Form, IPayModeView
     {
-        string PayModeId { get; set; }
-        string PayModeName { get; set; }
-        string PayModeObservation { get; set; }
-        string SearchValue { get; set; }
-        bool IsEdit { get; set; }
-        bool IsSuccessful { get; set; }
-        string Message { get; set; }
-
-        event EventHandler SearchEvent;
-        event EventHandler AddNewEvent;
-        event EventHandler EditEvent;
-        event EventHandler DeleteEvent;
-        event EventHandler SaveEvent;
-        event EventHandler CancelEvent;
-
-        void SetPayModeListBildingSource(BindingSource payModeList);
-        void Show();
-
         private bool isEdit;
         private bool isSuccessful;
         private string message;
